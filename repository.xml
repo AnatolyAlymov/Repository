@@ -1,0 +1,31 @@
+<settings Info="settings">
+  <paramSchedTask Info="ScheduleTaskList">
+    <Task id="SHP">
+      <Name>SHP</Name>
+      <PathRepository>"\\local\CUP$\CU_SHP"</PathRepository>
+      <PathLocal>"C:\_Update\SHP"</PathLocal>
+      <PathLogs>"\\TEST\_update$\LOG\%COMPUTERNAME%.txt"</PathLogs>
+      <Descript>Upload SharePoint CU</Descript>
+    </Task>
+    <Task id="SQL">
+      <Name>SQL</Name>
+      <PathRepository>"\\local\CUP$\CU_SQL"</PathRepository>
+      <PathLocal>"C:\_Update\SQL"</PathLocal>
+      <PathLogs>"\\TEST\_update$\LOG\%COMPUTERNAME%.txt"</PathLogs>
+      <Descript>SQL Server CU Update</Descript>
+    </Task>
+    <Task id="WEB">
+      <Name>WEBAPPS</Name>
+      <PathRepository>"\\local\CUP$\CU_WEBAPPS"</PathRepository>
+      <PathLocal>"C:\_Update\WEBAPPS"</PathLocal>
+      <PathLogs>"\\TEST\_update$\LOG\%COMPUTERNAME%.txt"</PathLogs>
+      <Descript>CU for Office Wep Apps </Descript>
+    </Task>
+  </paramSchedTask>
+  <servers Info="ServerList">
+    <s id="server_name1">
+      <name>server_name1</name>
+      <task>WEB</task>
+    </s>
+  </servers>
+</settings>
