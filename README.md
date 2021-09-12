@@ -51,4 +51,15 @@
 4. После чего жмем `"Diconnected"`. Задание удаляется с сервера. Если несколько заданий повторяем все с п.3 для другого задания.
 5. Удаляем сервер из репозитория жмем `"Remove Server"`.
 
+Программу можно скомпилировать для этого:
+```Powershell
+# Устанавливаем модуль для компиляции
+Install-Module -name ps2exe
+
+# Компилируем программу
+Invoke-PS2EXE C:\repository.ps1 C:\repository.exe
+ps2exe -inputFile C:\repository.ps1  -outputFile С:\repository.exe
+
+```
+
 ### На этом все, Благодарю за внимание и интерес!
