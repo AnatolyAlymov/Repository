@@ -60,6 +60,10 @@ Install-Module -name ps2exe
 Invoke-PS2EXE C:\repository.ps1 C:\repository.exe
 ps2exe -inputFile C:\repository.ps1  -outputFile С:\repository.exe
 
+# Если возникает ошибка необходимо разрешить выполнение
+# скриптов в системе
+Set-ExecutionPolicy Unrestricted
+
 ```
 
 ### На этом все, Благодарю за внимание и интерес!
